@@ -25,9 +25,9 @@ import fortuneCooking from "./company/fortuneCooking.png";
 import nofrills from "./company/noFrills.png";
 import costco from "./company/costco.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import brainFlix from "./brainFlix.gif";
+import bandSite from "./bandSite.gif";
+import journey from "./journey.gif";
 
 export {
   logo,
@@ -54,7 +54,7 @@ export {
   fortuneCooking,
   nofrills,
   costco,
-  carrent,
-  jobit,
-  tripguide,
+  brainFlix,
+  bandSite,
+  journey,
 };

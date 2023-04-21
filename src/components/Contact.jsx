@@ -16,9 +16,56 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handlechange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({...form, [name]: value})
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    // Check if form fields are not empty
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+  
+    // Check if email is valid
+    const emailRegex = /\S+@\S+\.\S+/;
+    if (!emailRegex.test(form.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+  
+    setLoading(true);
+
+    emailjs.send(
+      "service_ywprvph",
+      "template_ls2e94b",
+      {
+        from_name: form.name,
+        to_name: "Tommy",
+        from_email: form.email,
+        to_email: "timsnguyen@hotmail.com",
+        message: form.message,
+      },
+      "s6jc0I844TxtaN1mY"
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        })
+      }, (error) => {
+        setLoading(false);
+        console.log(error);
+        alert("Something went wrong. Please try again.");
+      })
+  };
 
   return (
     <div
@@ -43,18 +90,18 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="Enter your name"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Email address"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -65,7 +112,7 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
+              placeholder='Enter your message here'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

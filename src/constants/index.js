@@ -18,9 +18,9 @@ import {
   fortuneCooking,
   costco,
   nofrills,
-  carrent,
-  jobit,
-  tripguide,
+  brainFlix,
+  bandSite,
+  journey,
   threejs,
 } from "../assets";
 
@@ -181,67 +181,95 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "BrainFlix",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A full stack video streaming platform that allows users to upload, view, and comment.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "sass",
+        name: "Sass",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "NodeJS",
         color: "pink-text-gradient",
       },
+      {
+        name: "REST API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: brainFlix,
+    source_code_link: "https://github.com/TommieeN/Brainflix",
   },
   {
-    name: "Job IT",
+    name: "BandSite",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Fully responsive website for a fictional band that include show dates.",
     tags: [
       {
-        name: "react",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "REST API",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Sass",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "BEM",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JSON",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: bandSite,
+    source_code_link: "https://github.com/TommieeN/band-site",
   },
   {
-    name: "Trip Guide",
+    name: "Journey",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A platformer game created with CanvasAPI and React",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "JavaScript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Sass",
         color: "pink-text-gradient",
       },
+      {
+        name: "Canvas API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JSON",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: journey,
+    source_code_link: "https://github.com/TommieeN/Journey-React-Platformer-Game",
   },
 ];
 

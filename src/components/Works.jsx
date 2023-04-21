@@ -23,13 +23,13 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-[10px] sm:w-[22.5rem] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[22.5rem] w-full"
       >
         <div className="relative w-full h-[14.375rem]">
           <img
             src={image}
             alt={image}
-            className="w-full h-full object-cover rounded-[10px]"
+            className="w-full h-full rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
