@@ -183,15 +183,11 @@ const projects = [
   {
     name: "BrainFlix",
     description:
-      "A full stack video streaming platform that allows users to upload, view, and comment.",
+      "A full stack streaming platform. Users can post comments and upload videos.",
     tags: [
       {
         name: "React",
         color: "blue-text-gradient",
-      },
-      {
-        name: "Sass",
-        color: "green-text-gradient",
       },
       {
         name: "NodeJS",
@@ -199,10 +195,6 @@ const projects = [
       },
       {
         name: "REST API",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ExpressJS",
         color: "green-text-gradient",
       },
     ],
@@ -223,18 +215,6 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Sass",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "BEM",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
         name: "JSON",
         color: "pink-text-gradient",
       },
@@ -252,20 +232,12 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "JavaScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Sass",
-        color: "pink-text-gradient",
-      },
-      {
         name: "Canvas API",
         color: "green-text-gradient",
       },
       {
         name: "JSON",
-        color: "blue-text-gradient",
+        color: "pink-text-gradient",
       },
     ],
     image: journey,
