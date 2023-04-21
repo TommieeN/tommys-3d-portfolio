@@ -31,7 +31,7 @@ const Hero = () => {
       items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] 
-          rounded-3x1 border-4 border-secondary 
+          rounded-[18px] border-4 border-secondary 
           flex justify-center items-start p-2">
             <motion.div
               animate={{
