@@ -28,6 +28,7 @@ import costco from "./company/costco.png";
 import brainFlix from "./brainFlix.gif";
 import bandSite from "./bandSite.gif";
 import journey from "./journey.gif";
+import inStock from "./inStock.gif";
 
 export {
   logo,
@@ -57,4 +58,5 @@ export {
   brainFlix,
   bandSite,
   journey,
+  inStock,
 };

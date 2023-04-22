@@ -22,6 +22,7 @@ import {
   bandSite,
   journey,
   threejs,
+  inStock,
 } from "../assets";
 
 export const navLinks = [
@@ -242,6 +243,27 @@ const projects = [
     ],
     image: journey,
     source_code_link: "https://github.com/TommieeN/Journey-React-Platformer-Game",
+  },
+  {
+    name: "In-stock",
+    description:
+      "A collaborative project utilizing agile methodologies to create a full stack application.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: inStock,
+    source_code_link: "https://github.com/TommieeN/instock-client",
   },
 ];
 
