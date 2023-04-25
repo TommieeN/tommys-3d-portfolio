@@ -7,6 +7,9 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import linkedIn from "./linkedIn.png";
+import githubNav from "./githubNav.png";
+
 import css from "./tech/css.png";
 import express from "./tech/express.svg";
 import figma from "./tech/figma.png";
@@ -39,6 +42,8 @@ export {
   github,
   menu,
   close,
+  linkedIn,
+  githubNav,
   css,
   express,
   figma,
