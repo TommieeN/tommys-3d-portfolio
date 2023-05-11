@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { staggerContainer } from "../utils/motion";
 
+// HIGHER ORDER COMPONENT TO WRAP EACH SECTION
 const StarWrapper = (Component, idName) =>
   function HOC() {
     return (

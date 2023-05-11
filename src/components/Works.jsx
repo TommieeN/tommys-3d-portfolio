@@ -7,7 +7,8 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
+// CREATE PROJECT CARD COMPONENT
+const  ProjectCard = ({
   index,
   name,
   description,
@@ -17,6 +18,8 @@ const ProjectCard = ({
 }) => {
 
   return (
+
+    // ADD TILT EFFECT TO EACH CARD
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
@@ -33,8 +36,10 @@ const ProjectCard = ({
             className="w-full h-full rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+
+           {/* OPEN LINK IN NEW TAB */}
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link, "_blank")} 
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -56,14 +61,14 @@ const ProjectCard = ({
         <div
         className="mt-4 flex flex-wrap gap-2"
         >
+
+           {/* MAP THROUGH TAGS AND RENDER EACH TAG */}
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
-
         </div>
-
       </Tilt>
     </motion.div>
   );

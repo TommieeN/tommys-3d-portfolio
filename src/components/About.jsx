@@ -45,9 +45,8 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]"
       >
         Hi there! I'm a recent graduate of a full stack web development bootcamp
-        at BrainStation, with experience in Javascript, Node, React, and more.
-        I'm currently learning how to use Three.js to take my skills to the next
-        level. I'm passionate about web development and always looking for ways
+        at BrainStation, with experience in Javascript, Node, React, and more. 
+        I'm passionate about web development and always looking for ways
         to learn and improve. I'm eager to bring my skills and enthusiasm to any
         team or project, and create user-friendly and visually appealing
         websites.

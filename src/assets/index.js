@@ -24,13 +24,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import fortuneCooking from "./company/fortuneCooking.png";
-import nofrills from "./company/noFrills.png";
-import costco from "./company/costco.png";
-
 import brainFlix from "./brainFlix.gif";
 import bandSite from "./bandSite.gif";
-import journey from "./journey.gif";
+import flags from "./flags.gif";
 import inStock from "./inStock.gif";
 
 export {
@@ -57,11 +53,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  fortuneCooking,
-  nofrills,
-  costco,
   brainFlix,
   bandSite,
-  journey,
+  flags,
   inStock,
 };

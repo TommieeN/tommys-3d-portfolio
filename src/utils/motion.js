@@ -1,3 +1,4 @@
+
 export const textVariant = (delay) => {
     return {
       hidden: {
@@ -16,6 +17,8 @@ export const textVariant = (delay) => {
     };
   };
   
+
+  // FUNCTION TO FADEIN OBJECTS
   export const fadeIn = (direction, type, delay, duration) => {
     return {
       hidden: {
@@ -37,25 +40,7 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const zoomIn = (delay, duration) => {
-    return {
-      hidden: {
-        scale: 0,
-        opacity: 0,
-      },
-      show: {
-        scale: 1,
-        opacity: 1,
-        transition: {
-          type: "tween",
-          delay: delay,
-          duration: duration,
-          ease: "easeOut",
-        },
-      },
-    };
-  };
-  
+  // FUNCTION TO SLIDEIN OBJECTS
   export const slideIn = (direction, type, delay, duration) => {
     return {
       hidden: {
@@ -75,6 +60,7 @@ export const textVariant = (delay) => {
     };
   };
   
+  // CONTAINER DELAY FOR HOC
   export const staggerContainer = (staggerChildren, delayChildren) => {
     return {
       hidden: {},

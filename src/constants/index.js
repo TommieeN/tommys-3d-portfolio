@@ -15,16 +15,14 @@ import {
   git,
   figma,
   express,
-  fortuneCooking,
-  costco,
-  nofrills,
   brainFlix,
   bandSite,
-  journey,
+  flags,
   threejs,
   inStock,
 } from "../assets";
 
+// NAV LINKS DATA FOR NAVBAR
 export const navLinks = [
   {
     id: "about",
@@ -40,6 +38,7 @@ export const navLinks = [
   },
 ];
 
+// SERVICES DATA FOR CARDS SECTION
 const services = [
   {
     title: "Full Stack Developer",
@@ -59,6 +58,7 @@ const services = [
   },
 ];
 
+// TECHNOLOGIES DATA FOR TECH SECTION (3D-BALLS)
 const technologies = [
   {
     name: "HTML 5",
@@ -114,72 +114,7 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "Meat Clerk",
-    company_name: "No Frills",
-    icon: nofrills,
-    iconBg: "#f5e600",
-    date: "JUL 2016 - SEPT 2018",
-    points: [
-      "Responded to Customer inquiries in a polite and friendly manner, resulting in  a high customer satisfaction rate.",
-      "Managed Departments fresh meat goods, resulting in a 15% reduction in inventory waste.",
-      "Trained new employees to be more efficient in pushing out products, resulting in a 15% increase in sales revenue.",
-    ],
-  },
-  {
-    title: "Waiter",
-    company_name: "Fortune Cooking Restaurant",
-    icon: fortuneCooking,
-    iconBg: "#E6DEDD",
-    date: "JUN 2018 - MAR 2020",
-    points: [
-      "Trained new waiters/waitresses in providing excellent customer service and positive language when providing solutions to conflicts, resulting in a 20% increase in customer satisfaction rates.",
-      "Served multiple tables every night with over 40 patrons, resulting in an average tip rate of 50%.",
-      "Converted first time customers and increased customer return rate through reliable and prompt service resulting in a 30% increase in repeat business.",
-    ],
-  },
-  {
-    title: "Stocker",
-    company_name: "Costco Wholesale",
-    icon: costco,
-    iconBg: "#383E56",
-    date: "JUL 2020 - April 2023",
-    points: [
-      "Demonstrate leadership and teamwork by training and guiding co-workers to efficiently present the warehouse, resulting in a 20% increase in productivity.",
-      "Communicate and resolve issues to satisfy the company and customers needs, resulting in a 95% customer satisfaction rate.",
-      "Collaborate with the shipping department and ensure efficient flow of all shipments resulting in a 25% reduction in shipment processing time.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
+// PROJECTS DATA FOR WORK CARDS
 const projects = [
   {
     name: "BrainFlix",
@@ -224,25 +159,25 @@ const projects = [
     source_code_link: "https://github.com/TommieeN/band-site",
   },
   {
-    name: "Journey",
+    name: "Country Flags",
     description:
-      "A platformer game created with CanvasAPI and React",
+      "A list of flags from around the world. Users can search for a specific country. Dark mode is also available.",
     tags: [
       {
         name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "Canvas API",
+        name: "Express",
         color: "green-text-gradient",
       },
       {
-        name: "JSON",
+        name: "NodeJS",
         color: "pink-text-gradient",
       },
     ],
-    image: journey,
-    source_code_link: "https://github.com/TommieeN/Journey-React-Platformer-Game",
+    image: flags,
+    source_code_link: "https://github.com/TommieeN/country-flags-api",
   },
   {
     name: "In-stock",
@@ -267,4 +202,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, projects };
